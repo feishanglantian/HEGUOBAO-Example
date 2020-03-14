@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 整个屏幕 */
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+/* ----------------顶部(nav)-----------------*/
+
+.top {
+    width: 100%;
+    height: 100px;
+}
+
+
+/* 顶部所有div样式 */
+
+.top>div {
+    float: left;
+    padding: 25px 0 0px;
+    margin: 0 40px 0 0;
+    height: 70px;
+}
+
+
+/* 链接 */
+
+.top>div a {
+    display: block;
+    font-size: 18px;
+    height: 44px;
+    color: #050505;
+    text-decoration: none;
+    text-align: center;
+    margin: 7px 0;
+    padding: 0 10px;
+}
+
+
+/* 鼠标经过的时候变色 */
+
+.top a:hover {
+    color: red;
+    border-bottom: 2px solid #00a4ff;
+}
+
+
+/* 输入框样式 */
+
+#search {
+    margin-left: 80px;
+}
+
+.search input {
+    font-size: 6px;
+    color: gray;
+    float: left;
+    width: 361px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+
+
+/* 输入框点击按钮 */
+
+.search button {
+    width: 49px;
+    height: 40px;
+    float: right;
+    background: url(images/search-button.png) no-repeat;
+    margin-top: -40px;
+    margin-right: -46px;
+    border: 1px solid #00a4ff;
+}
+
+
+/* 个人中心 */
+
+#man {
+    height: 21px;
+    width: 48px;
+    font-size: 12px;
+    margin-left: 47px;
+    margin-top: 12px;
+}
+
+
+/* 铃铛 */
+
+#ld {
+    height: 20px;
+    margin-left: -10px;
+    margin-top: 12px;
+}
+
+
+/* 人头像 */
+
+#ren {
+    height: 9px;
+    width: 8px;
+    margin-left: -7px;
+    margin-top: 3px;
+    border-radius: 0px;
+}
+
+
+/* --------------顶部到此--------------- */
+
+
+/* --------------横幅------------------  */
+
+
+/* 背景图 */
+
+.banner {
+    width: 1265px;
+    height: 420px;
+    background: url(images/banner.jpg);
+    background-color: #fff;
+}
+
+
+/* 边栏 */
+
+.bianlan {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: #14024b;
+}
+
+.bianlan a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 20px;
+    text-indent: 2em;
+}
+
+
+/* 边栏鼠标经过变色 */
+
+.bianlan a:hover {
+    color: #00b4ff;
+}
+
+.bianlan a span {
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* 课程表 */
+
+.timebook {
+    float: right;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.timebook h4 {
+    font-size: 17.5px;
+    width: 228px;
+    height: 50px;
+    color: #fff;
+    background-color: #9bcaea;
+    text-align: center;
+    line-height: 50px;
+}
+
+.timebook li {
+    font-size: 16px;
+    width: 228px;
+    height: 50px;
+    text-align: center;
+    list-style: none;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.timebook li p {
+    font-size: 10px;
+    color: gray;
+    text-align: center;
+    text-indent: -6.2em;
+}
+
+
+/* 框 */
+
+#buyiyang {
+    display: block;
+    width: 188px;
+    height: 40px;
+    border: 1px solid #2288f6;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+
+/* 鼠标经过变色 */
+
+#buyiyang:hover {
+    background-color: #2288f6;
+}
+
+
+/* ---------横幅到此 ----------*/
+
+
+/* ----------推荐栏-----------*/
+
+
+/* 布局 */
+
+.rec {
+    width: 1200px;
+    height: 61px;
+    background-color: #fff;
+    margin: 10px auto;
+    line-height: 61px;
+}
+
+
+/* a */
+
+.rec>a {
+    text-decoration: none;
+    margin: 0px 15px;
+    font-size: 14px;
+    padding-left: 15px;
+    color: #000;
+}
+
+
+/* 鼠标经过 */
+
+.rec #hover:hover {
+    color: red;
+}
+
+
+/* 特殊 */
+
+#strong {
+    color: #22b0ff;
+}
+
+
+/* 特殊 */
+
+span {
+    float: right;
+    font-size: 12px;
+    color: #22b0ff;
+    margin-right: 15px;
+}
+
+
+/* ～～～～～～～～～～～推荐栏～～～～～～～～～～～～ */
+
+
+/* 推荐栏列表1 */
+
+.rec-l-one {
+    width: 1200px;
+    height: 27px;
+    background-color: #f3f5f7;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.rec-l-one h3 {
+    display: inline-block;
+    height: 27px;
+    color: gray;
+}
+
+.rec-l-one a {
+    float: right;
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
+
+.rec-l-one a:hover {
+    color: red;
+}
+
+
+/* 推荐栏商品1 */
+
+.shangpin {
+    width: 1200px;
+    height: 570px;
+    margin: 0px auto;
+    margin-top: 13px;
+}
+
+.shangpin>div {
+    float: left;
+    width: 225px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* 鼠标经过盒子出现阴影 */
+
+.shangpin>div:hover {
+    box-shadow: 7px 23px 32px 24px green;
+}
+
+
+/* 图片超出设置范围 */
+
+.shangpin>div img {
+    width: 100%;
+    background-color: pink;
+}
+
+.shangpin div p {
+    font-size: 14px;
+    width: 185px;
+    height: 42px;
+    margin: 18px auto;
+}
+
+#gaoji {
+    font-size: 12px;
+    height: 20px;
+    color: red;
+}
+
+#gaoji span {
+    font-size: 12px;
+    color: gray;
+    margin-right: 77px;
+}
+
+
+/* 底部 */
+
+.bottom {
+    width: 1265px;
+    height: 460px;
+    background-color: #fff;
+    margin-top: 45px;
+}
+
+.bottom .left {
+    display: inline-block;
+    font-size: 12px;
+    width: 432px;
+    height: 165px;
+    background-color: #fff;
+}
+
+#bottom {
+    width: 432px;
+    height: 23px;
+    margin-top: 14px;
+    color: gray;
+}
+
+#xiazai {
+    height: 35px;
+    width: 120px;
+    border: 1px solid #22b0ff;
+    text-align: center;
+    line-height: 35px;
+    color: #22b0ff;
+}
+
+#xiazai:hover {
+    background-color: #698594;
+}
+
+.right1 {
+    height: 400px;
+    float: right;
+    color: gray;
+    font-size: 12px;
+    margin: 0 183px;
+    padding: 20px 0;
+}
+
+.right1 dl dt {
+    font-size: 15px;
+}
+
+.right2 {
+    height: 400px;
+    float: right;
+    color: gray;
+    font-size: 12px;
+    margin: 0 -82px;
+    padding: 20px 0;
+}
+
+.right2 dl dt {
+    font-size: 15px;
+}
+
+.right3 {
+    height: 400px;
+    float: right;
+    font-size: 12px;
+    color: gray;
+    margin: 0 -418px;
+    padding: 20px 0;
+}
+
+.right3 dl dt {
+    font-size: 15px;
+}
