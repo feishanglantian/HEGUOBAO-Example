@@ -1,0 +1,146 @@
+.ul {
+    /* 注意这里是避免被上个css的flex设置 */
+    height: 470px;
+    display: block;
+    overflow-y: auto;
+    margin-top: 50px;
+    /* overflow-x: auto; */
+}
+
+.li {
+    display: block;
+    width: 90%;
+    /* 设置到最初(left) */
+    text-align-last: left;
+    list-style: none;
+    color: #d2dae2;
+    font-size: 18px;
+    margin: 48px 0;
+    /* 会有位置 */
+    position: relative;
+}
+
+.ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-image: linear-gradient(rgb(0, 255, 34), rgb(0, 92, 128), rgb(0, 183, 255));
+    border-radius: 10%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.li::before,
+.li::after {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 100%;
+    background-color: #1f4a59;
+    position: absolute;
+    bottom: -28px;
+    border-radius: 6px;
+}
+
+.li::before {
+    /* 阴影 */
+    box-shadow: 0 0 6px rgba(75, 207, 250, 0.2);
+}
+
+.li::after {
+    width: 400px;
+    /* 颜色渐变 可以从角度 to left，right 90deg 180deg*/
+    /* 语法background-image: linear-gradient(90deg 180deg)(to red), green, blue); */
+    /* background-image: linear-gradient(90deg, #0fbcf9, #34e7e4); */
+    background-image: linear-gradient(to left, green, blue);
+}
+
+.li::after {
+    /* 设计动画的时间 */
+    animation-duration: 10.2s;
+    /* 把物体动画地从一个地方移动到另一个地方，并让它停留在那里 */
+    animation-fill-mode: forwards;
+    /* 从开始到结束以相同的速度播放动画: */
+    animation-timing-function: ease-in-out;
+}
+
+.java::after {
+    /* 为 @keyframes 动画指定一个名称 */
+    /*必须加不然不会动 position: relative; */
+    animation-name: java;
+}
+
+.python::after {
+    animation-name: python;
+}
+
+.javascript::after {
+    animation-name: javascript;
+}
+
+.cjj::after {
+    animation-name: cjj;
+}
+
+.cj::after {
+    animation-name: cj;
+}
+
+.PHP::after {
+    animation-name: php
+}
+
+@keyframes java {
+    /* 使一个div元素逐渐移动 */
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes python {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes javascript {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes cjj {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes cj {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes php {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30%;
+    }
+}
